@@ -1,0 +1,10 @@
+policy,rule,delta_usd,injected,flagged_immediately,closed_form_mismatch,flagged_at_end,mean_dust_usd,median_dust_usd,taint_conserved,conserving_policy
+poison,poison,0.0,5000,5000,0,4531,1e-06,1e-06,,False
+poison,share,0.0,5000,5000,0,4640,160.80752499739998,2.00456,,False
+poison,bbe,100.0,5000,5000,0,4519,238.721860453,100.0,,False
+haircut,poison,0.0,5000,5000,0,4531,1e-06,1e-06,True,True
+haircut,share,0.0,5000,5000,0,3903,160.80752499739998,2.00456,True,True
+haircut,bbe,100.0,5000,5000,0,3566,238.721860453,100.0,True,True
+fifo,poison,0.0,5000,5000,0,4378,1e-06,1e-06,True,True
+fifo,share,0.0,5000,5000,0,3950,160.80752499739998,2.00456,True,True
+fifo,bbe,100.0,5000,5000,0,4161,238.721860453,100.0,True,True

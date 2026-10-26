@@ -1,0 +1,17 @@
+{
+  "n_transfers": 250527,
+  "S1_bound_holds_all": true,
+  "S3_max_mismatch": 0,
+  "S3_runs": 14,
+  "S3_reproduces_E3": true,
+  "S5_bbe_floor100_max": 99,
+  "S6_max_mismatch": 0,
+  "S3_bbe_flagged_fraction_range": [
+    1.0,
+    1.0
+  ],
+  "S4_recall_delta100_range": [
+    0.9981178203213243,
+    0.9998719598955612
+  ]
+}

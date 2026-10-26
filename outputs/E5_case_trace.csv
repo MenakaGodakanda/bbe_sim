@@ -1,0 +1,13 @@
+policy,rule,t,event,dust_usd,bal_usd,taint_usd,flagged
+poison,poison,1702786944.0,in+dust,1e-06,250.117758,250.117758,True
+poison,poison,1702795546.0,in,,500.039423,250.117758,True
+poison,poison,1702797580.0,in,,750.407298,250.117758,True
+poison,poison,1703502453.0,in,,998.053946,250.117758,True
+haircut,share,1702786944.0,in+dust,27.790862,277.908619,27.790862,True
+haircut,share,1702795546.0,in,,527.830284,27.790862,False
+haircut,share,1702797580.0,in,,778.198159,27.790862,False
+haircut,share,1703502453.0,in,,1025.844807,27.790862,False
+fifo,bbe,1702786944.0,in+dust,100.0,350.117757,100.0,True
+fifo,bbe,1702795546.0,in,,600.039422,100.0,True
+fifo,bbe,1702797580.0,in,,850.407297,100.0,True
+fifo,bbe,1703502453.0,in,,1098.053945,100.0,False

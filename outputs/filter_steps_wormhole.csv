@@ -1,0 +1,6 @@
+step,records,share_of_all
+all records in file,699474,1.0
+with a dollar value at both ends,581909,0.8319237026680049
+... and with creation and completion times,250817,0.35857944684148374
+... and with positive values,250527,0.35816484958697536
+... and completion not before creation (retained),250527,0.35816484958697536

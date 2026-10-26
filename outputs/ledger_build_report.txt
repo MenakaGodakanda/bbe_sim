@@ -1,0 +1,24 @@
+                                             step  records  share_of_all
+                              all records in file   699474      1.000000
+                 with a dollar value at both ends   581909      0.831924
+       ... and with creation and completion times   250817      0.358579
+                     ... and with positive values   250527      0.358165
+... and completion not before creation (retained)   250527      0.358165
+           records  median_usd     mean_usd       p25         p75  n_src_chains  n_dst_chains  n_tokens     first_dep      last_dep
+kept                                                                                                                               
+excluded  448947.0   99.865327  3056.300450  3.587590  547.140303          23.0          24.0     434.0  1.672531e+09  1.704067e+09
+retained  250527.0   82.955209  3478.475199  4.374997  522.767572          23.0          15.0     344.0  1.684568e+09  1.704067e+09
+wormhole: raw=699474 kept=250527 mapping={'src_addr': 'fromAddress', 'dst_addr': 'toAddress', 'token': 'fromTokenAddress', 'amt_in': 'srcUSD', 'amt_out': 'dstUSD', 't_dep': 'createTime', 't_wd': 'completeTime', 'src_chain': 'fromChainRaw', 'dst_chain': 'toChainRaw', 'fee': None, 'pair_id': '_id'}
+              count  unique                                           top    freq               mean                 std           min           25%           50%           75%               max
+src_addr     250527  133695    0x4cb6f0ef0eeb503f8065af1a6e6d5dd46197d3d9    1630                NaN                 NaN           NaN           NaN           NaN           NaN               NaN
+dst_addr     250527   73047  gytw6attsqjwjsbqdtsmxtkd1797zsfspdawg64ryo1y   17487                NaN                 NaN           NaN           NaN           NaN           NaN               NaN
+token        250527     344    0x82af49447d8a07e3bd95bd0d56f35241523fbab1   21037                NaN                 NaN           NaN           NaN           NaN           NaN               NaN
+amt_in_u   250527.0    <NA>                                          <NA>    <NA>  3478475199.379564  57178977188.414429           1.0     4374997.5    82955209.0   522767571.5  20532943417800.0
+amt_out_u  250527.0    <NA>                                          <NA>    <NA>  3478475199.379564  57178977188.414429           1.0     4374997.5    82955209.0   522767571.5  20532943417800.0
+t_dep      250527.0     NaN                                           NaN     NaN  1701433959.887146      3377425.727042  1684568100.0  1701775681.5  1702418651.0  1703293646.0      1704067191.0
+t_wd       250527.0     NaN                                           NaN     NaN  1701464868.806141      3349655.015498  1684568306.0  1701780913.5  1702432064.0  1703317341.0      1705774211.0
+src_chain    250527      23                                             1   51952                NaN                 NaN           NaN           NaN           NaN           NaN               NaN
+dst_chain    250527      15                                           1.0   58862                NaN                 NaN           NaN           NaN           NaN           NaN               NaN
+fee_u      250527.0    <NA>                                          <NA>    <NA>                0.0                 0.0           0.0           0.0           0.0           0.0               0.0
+pair_id      250527  250527                      65cbda8b6595a18bd8428ccd       1                NaN                 NaN           NaN           NaN           NaN           NaN               NaN
+bridge       250527       1                                      wormhole  250527                NaN                 NaN           NaN           NaN           NaN           NaN               NaN

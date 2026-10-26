@@ -1,0 +1,20 @@
+{
+  "n_transfers": 250527,
+  "chain_qualified": true,
+  "n_dst_addresses_unqualified": 73047,
+  "n_src_chains": 23,
+  "n_dst_chains": 15,
+  "n_dst_addresses": 103022,
+  "n_hubs_removed": 80,
+  "hub_share_of_value": 0.2429257140877416,
+  "victims_all": 103022,
+  "median_balance_usd_all": 29.70022,
+  "victims_nonhub": 102942,
+  "median_balance_usd_nonhub": 29.5,
+  "ofac_overlap_src": 0,
+  "ofac_overlap_dst": 0,
+  "e4_seed_type": "hypothetical_seeds_on_real_flows",
+  "e4_n_seeds": 200,
+  "case_address": "22:0x2aa1798ebefa3be924c6c630d453146a6e865755be0dde784c69925982d5436a",
+  "E1_mean_k_central": 4.5946
+}

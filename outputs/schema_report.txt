@@ -1,0 +1,294 @@
+================================================================================
+allBridge_data.parquet rows: 146210
+_id: string
+bridge: int64
+fromChainRaw: string
+toChainRaw: string
+fromChain: string
+toChain: string
+srcAmount: double
+dstAmount: double
+srcTxhash: string
+dstTxhash: string
+fromTokenAddress: string
+toTokenAddress: string
+fromAddress: string
+toAddress: string
+srcUSD: double
+dstUSD: double
+createTime: timestamp[ns]
+completeTime: timestamp[ns]
+profit: double
+isProfit: int64
+profitRatio: double
+__index_level_0__: int64
+-- schema metadata --
+pandas: '{"index_columns": ["__index_level_0__"], "column_indexes": [{"na' + 2831
+                                                                                   0                                                                   1                                                                                         2                                                                                         3                                                                                        4
+_id                                                         65cbd840b080ec1e9227fe09                                            65cbd840b080ec1e9227fe0a                                                                  65cbd840b080ec1e9227fe0b                                                                  65cbd840b080ec1e9227fe0c                                                                 65cbd840b080ec1e9227fe0d
+bridge                                                                             0                                                                   0                                                                                         0                                                                                         0                                                                                        0
+fromChainRaw                                                                     POL                                                                 ARB                                                                                       SOL                                                                                       ETH                                                                                      SOL
+toChainRaw                                                                       BSC                                                                 POL                                                                                       POL                                                                                       SOL                                                                                      ETH
+fromChain                                                                        pol                                                                 arb                                                                                       NaN                                                                                       eth                                                                                      NaN
+toChain                                                                          bsc                                                                 pol                                                                                       pol                                                                                       NaN                                                                                      eth
+srcAmount                                                                 109.426936                                                                31.4                                                                                255.583375                                                                                      10.0                                                                              5000.000666
+dstAmount                                                                 108.730659                                                           31.328936                                                                                252.603526                                                                                  9.951051                                                                              4948.131653
+srcTxhash         0xa674f8edf808651e78e5335a7baa5a6f636ffdf38ac6cfe719379f927085b01c  0x2ce40d18fab3b029d7d34f8da2343ed60c81976c5c87a28ca50f8599a32d68fb  2fzb4XigJZ9M24zxrBhE8jVtA9CLuqcSweHAzMGrHyMYbdgUhELZnodenqvQvxN1jqq9SEbb7HPLaY5S1vHoVcWC                        0x93ce4205a6f222b393a5ccb87ad5a10133c532beb3cd9726c310176f4577b928  ZxhgZYNSvyo1RP9DWYwpNbDdintb8ca5rVnR1Jb2wAZKrVScRuvuZnMTwipiapgGmdW9EiLEjcx6n2Vkq8TpGma
+dstTxhash         0xe6d0d4c118e4a46b2b79134a81fd084a12f92a741c78d9fa8bd50781a042d70e  0x9fc0898a94356b9f0c12171fce347b93a19f6454109a677aac74985cec4d17a8                        0x9180e120017042f58ea0fb7dad256b0a6406266c7e306f1f886646e10a906e5c  3xTvYQtK5zbWBPc1gFbvTVFRs36esDFgPqG6VCnpHnwH6JgyeiqAdTmh4bs4zFfLvRA5v4nbUDifoLQ8kdbTea28                       0xbdc48ad269b334563fda1894ca24f591495a5d1a8c80091ab7e82cf27318cb68
+fromTokenAddress                          0x3c499c542cef5e3811e1192ce70d8cc03d5c3359                          0xaf88d065e77c8cc2239327c5edb3a432268e5831                                              EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v                                                0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48                                             EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+toTokenAddress                            0x55d398326f99059ff775485246999027b3197955                          0x3c499c542cef5e3811e1192ce70d8cc03d5c3359                                                0x3c499c542cef5e3811e1192ce70d8cc03d5c3359                                              EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v                                               0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+fromAddress                               0x3296cd3b8e8cf56beb06cef32277a34332f2d99f                          0x32ead9e698b7b56d9ecede8b01ce9f372d7cc699                                              hah8wzc2boccihdzjavkcg7r2hsgw5ccztyabhad385q                                                0xb8cfbee2169e232223d8443d79829a2ac526f333                                             dvnddjnaqlygoyhcxf2nmnegfcc7clqbuvsrmhvhjrbq
+toAddress                                 0x3fbd53973b39ac983a47404911e93c1dcd6551fb                          0x32ead9e698b7b56d9ecede8b01ce9f372d7cc699                                                0x63c73c74ee20efbb792f061c9703a2b264915951                                              6ttjncdsll1hmzv5xqdkzgpmtlosvrdgk34uefudb9q4                                               0xc2bb8abe8b47a5d3fb74f377ec36bc7b61b87e26
+srcUSD                                                                    109.426936                                                                31.4                                                                                255.583375                                                                                      10.0                                                                              5000.000666
+dstUSD                                                                    108.730659                                                           31.328936                                                                                252.603526                                                                                  9.951051                                                                              4948.131653
+createTime                                                       2023-12-11 14:57:24                                                 2023-12-05 14:11:51                                                                       2023-12-13 12:03:31                                                                       2023-12-24 16:14:47                                                                      2023-12-30 21:20:34
+completeTime                                                                     NaT                                                                 NaT                                                                                       NaT                                                                                       NaT                                                                                      NaT
+profit                                                                     -0.696277                                                           -0.071064                                                                                 -2.979849                                                                                 -0.048949                                                                               -51.869013
+isProfit                                                                           0                                                                   0                                                                                         0                                                                                         0                                                                                        0
+profitRatio                                                                 0.993637                                                            0.997737                                                                                  0.988341                                                                                  0.995105                                                                                 0.989626
+null rate (first 200 rows):
+_id                 0.000
+bridge              0.000
+fromChainRaw        0.000
+toChainRaw          0.000
+fromChain           0.330
+toChain             0.455
+srcAmount           0.000
+dstAmount           0.000
+srcTxhash           0.000
+dstTxhash           0.000
+fromTokenAddress    0.000
+toTokenAddress      0.000
+fromAddress         0.000
+toAddress           0.000
+srcUSD              0.000
+dstUSD              0.000
+createTime          0.000
+completeTime        1.000
+profit              0.000
+isProfit            0.000
+profitRatio         0.000
+================================================================================
+block_data.parquet rows: 1345382
+_id: int64
+timestamp: string
+chain: string
+-- schema metadata --
+pandas: '{"index_columns": [{"kind": "range", "name": null, "start": 0, "' + 596
+                    0           1           2           3           4
+_id          39845890    42991618    39845891    39845892    39845894
+timestamp  1677683326  1684709704  1677683328  1677683330  1677683334
+chain             pol         pol         pol         pol         pol
+null rate (first 200 rows):
+_id          0.0
+timestamp    0.0
+chain        0.0
+================================================================================
+connext_data.parquet rows: 464542
+_id: string
+bridge: int64
+fromChainRaw: string
+toChainRaw: string
+fromChain: string
+toChain: string
+srcAmount: double
+dstAmount: double
+srcTxhash: string
+dstTxhash: string
+fromTokenAddress: string
+toTokenAddress: string
+fromAddress: string
+toAddress: string
+srcUSD: double
+dstUSD: double
+createTime: timestamp[ns]
+completeTime: timestamp[ns]
+profit: double
+isProfit: int64
+profitRatio: double
+__index_level_0__: int64
+-- schema metadata --
+pandas: '{"index_columns": ["__index_level_0__"], "column_indexes": [{"na' + 2831
+                                                                                   0                                                                   1                                                                   2                                                                   3                                                                   4
+_id                                                         65ea5d7059d1b4f5eb684a53                                            65ea5d7059d1b4f5eb684a54                                            65ea5d7059d1b4f5eb684a55                                            65ea5d7059d1b4f5eb684a56                                            65ea5d7059d1b4f5eb684a57
+bridge                                                                             1                                                                   1                                                                   1                                                                   1                                                                   1
+fromChainRaw                                                                      10                                                               42161                                                               42161                                                                 100                                                                  56
+toChainRaw                                                                     42161                                                                  56                                                                 137                                                                  56                                                               42161
+fromChain                                                                         op                                                                 arb                                                                 arb                                                              gnosis                                                                 bsc
+toChain                                                                          arb                                                                 bsc                                                                 pol                                                                 bsc                                                                 arb
+srcAmount                                                                     4796.0                                                          39807741.0                                                               767.0                                                          20385518.0                                                             16587.0
+dstAmount                                                                     4801.0                                                          39870387.0                                                               766.0                                                          20351793.0                                                             16522.0
+srcTxhash         0x18b8d9e8043b66b96cd12b93a59cfab137ff1dda8709c1e5420136499f9161d9  0xd7761b91d34a6058bacf7848d6a5e87e65259289a8ca8c72a61683b27cb65797  0xbda77e65a75833fd2a6d8669afa5918511e0b4196453c5522c13d30c0e8f7f76  0x81cf2155e51755d202ed2f52bf7d72515ac011b52373a2e0c253057730d15bcb  0x59ab48010c466b42105d3b942534002934110942eb757d95b7816910e3e846ac
+dstTxhash         0xeb5c6fcc385eed3f197b49cd11d0eb7af7923ed5f5b6813edc7f793b048c2cc6  0x58de0463789ff57638c7fe7ed02230cd97a4d725c6810990ec49ed000d7f62b6  0x6b09bff4a3fe2ac301b280562a2e3b3fbd2b7fdf7779fbc63b99e8a30c1e4600  0xbf59b6867d6f8eb7f868ea005a2034b4c23bb3881a756fa8299e9ca12a420938  0x51f92428e49d590995b5925afc2ed6a6b9bc61d0583c5e005594997780d92b24
+fromTokenAddress                          0xbad5b3c68f855eaece68203312fd88ad3d365e50                          0x2fd7e61033b3904c65aa9a9b83dcd344fa19ffd2                          0x2983bf5c334743aa6657ad70a55041d720d225db                          0x44cf74238d840a5febb0eaa089d05b763b73fab8                          0xa9cb51c666d2af451d87442be50747b31bb7d805
+toTokenAddress                            0x2983bf5c334743aa6657ad70a55041d720d225db                          0xd609f26b5547d5e31562b29150769cb7c774b97a                          0x4b8bac8dd1caa52e32c07755c17efaded6a0bbd0                          0x5e7d83da751f4c9694b13af351b30ac108f32c38                          0x2983bf5c334743aa6657ad70a55041d720d225db
+fromAddress                               0xb0eef3e1de973d045c3858e072c540299585252d                          0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae                          0x38b93e8c22497b06a40500666bfcb01469f26e43                          0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae                          0x3a23f943181408eac424116af7b7790c94cb97a5
+toAddress                                 0x429b9eb01362b2799131efcc44319689b662999d                          0x050e198e36a73a1e32f15c3afc58c4506d82f657                          0x89f423567c2648bb828c3997f60c47b54f57fa6e                          0x3ccccdacab1537c0e5dacee72931937e742b232b                          0x429b9eb01362b2799131efcc44319689b662999d
+srcUSD                                                                           NaN                                                                 NaN                                                                 NaN                                                                 NaN                                                                 NaN
+dstUSD                                                                           NaN                                                                 NaN                                                                 NaN                                                                 NaN                                                                 NaN
+createTime                                                       2023-12-23 13:04:49                                                 2023-12-21 06:58:20                                                 2023-12-30 20:55:12                                                 2023-12-23 03:31:25                                                 2023-12-15 10:33:39
+completeTime                                                     2023-12-23 14:54:12                                                 2023-12-21 09:09:57                                                 2023-12-30 23:24:34                                                 2023-12-23 06:04:09                                                 2023-12-15 15:14:31
+profit                                                                           5.0                                                             62646.0                                                                -1.0                                                            -33725.0                                                               -65.0
+isProfit                                                                           1                                                                   1                                                                   0                                                                   0                                                                   0
+profitRatio                                                                 1.001043                                                            1.001574                                                            0.998696                                                            0.998346                                                            0.996081
+null rate (first 200 rows):
+_id                 0.000
+bridge              0.000
+fromChainRaw        0.000
+toChainRaw          0.000
+fromChain           0.000
+toChain             0.000
+srcAmount           0.000
+dstAmount           0.000
+srcTxhash           0.000
+dstTxhash           0.225
+fromTokenAddress    0.000
+toTokenAddress      0.000
+fromAddress         0.000
+toAddress           0.000
+srcUSD              1.000
+dstUSD              1.000
+createTime          0.000
+completeTime        0.000
+profit              0.000
+isProfit            0.000
+profitRatio         0.000
+================================================================================
+orbitChain_data.parquet rows: 458055
+_id: string
+bridge: int64
+fromChainRaw: string
+toChainRaw: string
+fromChain: string
+toChain: string
+srcAmount: double
+dstAmount: double
+srcTxhash: string
+dstTxhash: string
+fromTokenAddress: string
+toTokenAddress: string
+fromAddress: string
+toAddress: string
+srcUSD: double
+dstUSD: double
+createTime: timestamp[ns]
+completeTime: timestamp[ns]
+profit: double
+isProfit: int64
+profitRatio: double
+-- schema metadata --
+pandas: '{"index_columns": [{"kind": "range", "name": null, "start": 0, "' + 2766
+                                                                                   0                                                                   1                                                                   2                                                                   3                                                                   4
+_id                                                         65cbd94b133904639a4f2ec0                                            65cbd94b133904639a4f2ec1                                            65cbd94b133904639a4f2ec2                                            65cbd94b133904639a4f2ec3                                            65cbd94b133904639a4f2ec4
+bridge                                                                             2                                                                   2                                                                   2                                                                   2                                                                   2
+fromChainRaw                                                                  KLAYTN                                                              KLAYTN                                                              KLAYTN                                                              KLAYTN                                                              KLAYTN
+toChainRaw                                                                     ORBIT                                                               ORBIT                                                               WEMIX                                                               WEMIX                                                               ORBIT
+fromChain                                                                        NaN                                                                 NaN                                                                 NaN                                                                 NaN                                                                 NaN
+toChain                                                                          NaN                                                                 NaN                                                               wemix                                                               wemix                                                                 NaN
+srcAmount                                                                  4540000.0                                                 90000000000000000.0                                                 70829100000000000.0                                                        6993000000.0                                                   218635594828420.0
+dstAmount                                                                  4540000.0                                                 90000000000000000.0                                                 70829100000000000.0                                                        6993000000.0                                                   218635594828420.0
+srcTxhash         0x6c7c2ce843e2f6fc1c4b4db2f4a0bcaf5e06dea1c506151c68e1fe7708266b3f  0xf297e631d7bef009eafab6238b884b845c56f211ce234a8e0493c67d3ca15a85  0x0792036e39b5a37336da0ba019429ff3ca8465dfc41d220cf52e8be92d415d3c  0x0f6734416614e816754b219a64ae99732efb3e1ff7f22569e488871bead22a25  0x34d02de8058d92fbcc66dcc122735bb03d7647a3b71b8cc9405f0f2a6b256287
+dstTxhash         0x39c4a7dd38d2a859068eb0ffa4108ee69fa15fc8cd2f3c6a8100a7d45ba590b8  0xb27d2a606d2edb6a2961050fc54716288acb9c0afabeeb78e73e6fa0133717b0  0x09985e2e59b7cb9c4cb01f4e6cb1b4baa273061bdde1bea40cf5c41eebdda4c1  0x4389623fcf6f65ededf244c1974cbc835a4d812a518fd494b1cfade3760425f2  0x2f68bf4ce7d25e3e8b0f3e14cc446d9330952e87479f2f95a61dfdc4df1d67c7
+fromTokenAddress                          0x4b96dbf8f42c8c296573933a6616dcafb80ca461                          0x67cb285790bb9f5dce728f80a3104a2297df2bb2                          0x67cb285790bb9f5dce728f80a3104a2297df2bb2                          0x754288077d0ff82af7a5317c7cb8c444d421d103                          0x67cb285790bb9f5dce728f80a3104a2297df2bb2
+toTokenAddress                            0x4b96dbf8f42c8c296573933a6616dcafb80ca461                          0xad60de287c03f50bc45b8f7737c79e8586a12494                          0x0000000000000000000000000000000000000000                          0xe4c2b5db9de5da0a17ed7ec7176602ad99e52624                          0xad60de287c03f50bc45b8f7737c79e8586a12494
+fromAddress                               0x906b53fe1f4ab3320a48a3460a92c51f0c5fdda0                          0x461f2023e1c2837880ea37851cc5d212ce6222f5                          0xe88476b0601b043f0c9647972d729c87d2b3bf08                          0x911fc48da3f6e38d195c6bbfb4fda31bd9b313c5                          0x1db85d231479b9d0e428c3192e32f1426d70d999
+toAddress                                 0xe9f3604b85c9672728eeecf689cf1f0cf7dd03f2                          0xe9f3604b85c9672728eeecf689cf1f0cf7dd03f2                          0xe88476b0601b043f0c9647972d729c87d2b3bf08                          0x911fc48da3f6e38d195c6bbfb4fda31bd9b313c5                          0xe9f3604b85c9672728eeecf689cf1f0cf7dd03f2
+srcUSD                                                                           NaN                                                                 NaN                                                                 NaN                                                                 NaN                                                                 NaN
+dstUSD                                                                           NaN                                                                 NaN                                                                 NaN                                                                 NaN                                                                 NaN
+createTime                                                       2023-12-15 10:04:46                                                 2023-12-05 19:03:22                                                 2023-12-12 10:40:38                                                 2023-12-12 15:07:51                                                 2023-12-19 17:04:09
+completeTime                                                     2023-12-15 10:06:00                                                 2023-12-05 19:04:30                                                 2023-12-12 10:41:51                                                 2023-12-12 15:09:30                                                 2023-12-20 05:40:10
+profit                                                                           0.0                                                                 0.0                                                                 0.0                                                                 0.0                                                                 0.0
+isProfit                                                                           0                                                                   0                                                                   0                                                                   0                                                                   0
+profitRatio                                                                      1.0                                                                 1.0                                                                 1.0                                                                 1.0                                                                 1.0
+null rate (first 200 rows):
+_id                 0.000
+bridge              0.000
+fromChainRaw        0.000
+toChainRaw          0.000
+fromChain           0.650
+toChain             0.665
+srcAmount           0.000
+dstAmount           0.000
+srcTxhash           0.000
+dstTxhash           0.000
+fromTokenAddress    0.000
+toTokenAddress      0.000
+fromAddress         0.000
+toAddress           0.000
+srcUSD              1.000
+dstUSD              1.000
+createTime          0.000
+completeTime        0.000
+profit              0.000
+isProfit            0.000
+profitRatio         0.000
+================================================================================
+wormhole_data.parquet rows: 699474
+_id: string
+bridge: int64
+fromChainRaw: int64
+toChainRaw: double
+fromChain: string
+toChain: string
+srcAmount: double
+dstAmount: double
+srcTxhash: string
+dstTxhash: string
+fromTokenAddress: string
+toTokenAddress: string
+fromAddress: string
+toAddress: string
+srcUSD: double
+dstUSD: double
+createTime: timestamp[ns, tz=UTC]
+completeTime: timestamp[ns, tz=UTC]
+profit: double
+isProfit: int64
+profitRatio: double
+__index_level_0__: int64
+-- schema metadata --
+pandas: '{"index_columns": ["__index_level_0__"], "column_indexes": [{"na' + 2863
+                                                                                     1                                                                   2                                                                                         3                                                                                           4                                                                                         5
+_id                                                           65cbda8b6595a18bd8428ccd                                            65cbda8b6595a18bd8428cce                                                                  65cbda8b6595a18bd8428ccf                                                                    65cbda8b6595a18bd8428cd0                                                                  65cbda8b6595a18bd8428cd1
+bridge                                                                               3                                                                   3                                                                                         3                                                                                           3                                                                                         3
+fromChainRaw                                                                         5                                                                  23                                                                                         1                                                                                           2                                                                                         1
+toChainRaw                                                                        22.0                                                                 1.0                                                                                      23.0                                                                                         1.0                                                                                      22.0
+fromChain                                                                          pol                                                                 arb                                                                                       NaN                                                                                         eth                                                                                       NaN
+toChain                                                                            NaN                                                                 NaN                                                                                       arb                                                                                         NaN                                                                                       NaN
+srcAmount                                                                   31000000.0                                                          10000000.0                                                                               210000000.0                                                                                  10000000.0                                                                                10000000.0
+dstAmount                                                                   31000000.0                                                          10000000.0                                                                               210000000.0                                                                                  10000000.0                                                                                10000000.0
+srcTxhash           0x9b17b666897e1e1f81fd7de17bd517eb6e725c2469a320653eb55688e4960457  0x99bd595f9eca6c828dc4cee225a0df42689bb54d6008ccb674cb54770e0fd76e  225c5KrkC6QN9ncXFs3wgTErnSNVv9SWhrCT2JuypV1twsL9P5anKKWv52GXM83mvqajcqaQxTLmxMTqwqEqjUVy                          0x09256a01f09061bd9cc9298e29d293ceb1d61d256f374186e27efc9b71a9d2c6  2D3iNkjutZgypkWjWxhYeXf3CdjdfTLGgvfcwB8hkRwQ4zqK5meTcb8m1zD9z9HnmmyaLdejUVjTBKPhv5iw2Gri
+dstTxhash         0x0x1173860374ae088170f5ddb0f881ca71a97de8bc17836a4b72c151f4017d80a7                                                                 NaN                                                                                       NaN  0x4eNbP6Kx1zNawjxfTELtxcwxNKGL1o5r99j5jrordYLGK4wbJTdLKZLYHwVo3o8SNgyD1uFk5xFt232kGkDxtQ3i                      0x0x3905c003d22ce86caee29c63ae2a65903ae67564b43e32cfb87d560ff82cbb82
+fromTokenAddress                            0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270                          0x82af49447d8a07e3bd95bd0d56f35241523fbab1                                               So11111111111111111111111111111111111111112                                                  0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2                                              EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+toTokenAddress                              0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270                          0x82af49447d8a07e3bd95bd0d56f35241523fbab1                                               So11111111111111111111111111111111111111112                                                  0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2                                              EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+fromAddress                                 0x4522a2130fb830f4f9a601fc6e6d5645f6291b5c                          0xca74d2f75aab40de4f3ad8d034f6bbcad530f48a                                              97pxvewfnbuxlmkmjdwyhgkxrhvlxsgrnwklyywxywer                                                  0xf5bae291a28c61f5137bb8ab6ec224e315bf6134                                              1417ary7djms6pnxztzw9yg26tsujfckruj9fhmmvhdq
+toAddress           0x8b47fa4b2f8839bdc673b4ccbcd5b2ba6214f1f3a4af55251b0654eb697cc1df                         zekdezapa2a8gsok7a7mgafen7jmgeflgwwbcjdtfbm                                                0x99870f09efcf74a36e467a191395bfa6df00e53f                                                4rrfmky3a5zwdizt61px222qmstjqnvszdebzznsoah6                        0x2625274deea90cdd3fae44758b33116094b2e7b0207b9b87325be52509b8d55e
+srcUSD                                                                         0.31062                                                              208.61                                                                                   203.217                                                                                     223.776                                                                                  0.099941
+dstUSD                                                                         0.31062                                                              208.61                                                                                   203.217                                                                                     223.776                                                                                  0.099941
+createTime                                                   2023-12-31 11:56:24+00:00                                           2023-12-01 23:34:24+00:00                                                                 2023-12-23 14:01:21+00:00                                                                   2023-12-11 07:08:47+00:00                                                                 2023-12-10 19:26:16+00:00
+completeTime                                          2023-12-31 14:06:13.174000+00:00                                                                 NaT                                                                                       NaT                                                            2023-12-11 07:26:27.751000+00:00                                                          2023-12-10 19:27:07.113000+00:00
+profit                                                                             0.0                                                                 0.0                                                                                       0.0                                                                                         0.0                                                                                       0.0
+isProfit                                                                             0                                                                   0                                                                                         0                                                                                           0                                                                                         0
+profitRatio                                                                        1.0                                                                 1.0                                                                                       1.0                                                                                         1.0                                                                                       1.0
+null rate (first 200 rows):
+_id                 0.000
+bridge              0.000
+fromChainRaw        0.000
+toChainRaw          0.000
+fromChain           0.495
+toChain             0.620
+srcAmount           0.000
+dstAmount           0.000
+srcTxhash           0.000
+dstTxhash           0.540
+fromTokenAddress    0.000
+toTokenAddress      0.000
+fromAddress         0.000
+toAddress           0.000
+srcUSD              0.000
+dstUSD              0.000
+createTime          0.000
+completeTime        0.540
+profit              0.000
+isProfit            0.000
+profitRatio         0.000

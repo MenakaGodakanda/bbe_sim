@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.7.0 -- /home/menaka/bbe_sim/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/menaka/bbe_sim
+collecting ... collected 17 items
+
+tests/test_attack.py::test_vectorised_equals_greedy PASSED               [  5%]
+tests/test_attack.py::test_zero_balance_costs_one_unit_under_share PASSED [ 11%]
+tests/test_bridge_accounting.py::test_accounting_identity_and_no_duplication PASSED [ 17%]
+tests/test_bridge_accounting.py::test_overlap_cap_is_reported_not_silently_lost PASSED [ 23%]
+tests/test_bridge_accounting.py::test_linker_is_deterministic_under_input_order PASSED [ 29%]
+tests/test_linking.py::test_unique_and_ambiguous PASSED                  [ 35%]
+tests/test_policies.py::test_conservation_haircut_fifo PASSED            [ 41%]
+tests/test_policies.py::test_poison_creates_taint PASSED                 [ 47%]
+tests/test_policies.py::test_min_dust_matches_replay PASSED              [ 52%]
+tests/test_policies.py::test_bbe_bound PASSED                            [ 58%]
+tests/test_reference.py::test_fifo_matches_unit_level_reference PASSED   [ 64%]
+tests/test_reference.py::test_haircut_matches_exact_rational_reference PASSED [ 70%]
+tests/test_reference.py::test_lock_removes_value_without_crediting PASSED [ 76%]
+tests/test_theorem.py::test_bound_with_fees_random_strategies PASSED     [ 82%]
+tests/test_theorem.py::test_tainted_value_only_bound_when_fees_paid_separately PASSED [ 88%]
+tests/test_theorem.py::test_equality_conditions PASSED                   [ 94%]
+tests/test_theorem.py::test_heterogeneous_fees_use_minimum_fee PASSED    [100%]
+
+============================== 17 passed in 0.50s ==============================
