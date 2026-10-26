@@ -1,0 +1,45 @@
+seed: 20261030
+raw_dir: data/raw
+processed_dir: data/processed
+out_dir: outputs
+# Column mapping for the Zenodo parquet files. Leave null to auto-guess; fill in
+# after reading outputs/schema_report.txt (step 02) if auto-guess is wrong.
+columns:
+  src_addr: fromAddress
+  dst_addr: toAddress
+  token: fromTokenAddress
+  amt_in: srcUSD
+  amt_out: dstUSD
+  t_dep: createTime
+  t_wd: completeTime
+  src_chain: fromChainRaw
+  dst_chain: toChainRaw
+  fee: null
+  pair_id: _id
+amount_is_usd: false      # set true if amounts are already USD
+decimals: null            # token decimals if amounts are raw integers
+bridges: ["wormhole"]     # USD amounts + completeTime present (allBridge completeTime is empty)
+theta: [1, 10]            # share threshold p/q = 10%
+delta_usd: [1, 5, 10, 50, 100, 500, 1000]
+budgets_usd: [100, 1000, 10000]
+cost_per_transfer_usd: 0.05
+link_window_s: [600, 1800, 3600, 7200]
+link_fee_tol: [0.005, 0.01, 0.02, 0.05]
+link_sample: 10000
+hub_receipt_threshold: 100   # destinations with more bridged receipts are treated as hubs/relayers
+e4_seed_count: 200
+e4_seed_min_usd: 1000
+e4_seed_max_usd: 1000000
+linker_pi_variants: [0.0, 0.5]
+victim_sample: 5000
+bootstrap_n: 2000
+chain_qualified: true   # accounts are (chain, address); set false to merge an address across chains
+sensitivity:               # used only by scripts/08_sensitivity.py
+  cost_usd: [0.01, 0.05, 0.25, 1.0]
+  hub_thresholds: [10, 50, 100, 500]
+  seed_offsets: [0, 1, 2, 3, 4]
+  victim_sizes: [1000, 5000, 10000]
+  opening_balances_usd: [0, 100, 1000]
+  e4_volume_ranges: [[1000, 1000000], [100, 10000], [10000, 10000000]]
+  e4_draws: [0, 1, 2, 3, 4]
+  theta_pairs: [[1, 100], [1, 20], [1, 10], [1, 5]]   # share threshold p/q = 1%, 5%, 10%, 20%
