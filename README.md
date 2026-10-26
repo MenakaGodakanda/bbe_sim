@@ -4,9 +4,28 @@ Code, configuration and result files for the paper **"Budget-Bounded Exposure (B
 
 BBE is a taint-flagging policy for cross-chain anti-money-laundering (AML) screening. An account is flagged only if its tainted exposure `T` satisfies `T >= delta` and `T >= theta * B`, where `B` is the account's balance. Under a conserving taint policy, an attacker who sends dust to victims gains at most `B_attack / (delta + c)` flagged accounts, regardless of the victims' balances (Theorem 1 in the paper). This repository reproduces every number, table and figure in the paper's Results section.
 
+> A detailed, plain-language explanation of every script, formula and algorithm, and of where each output appears in the paper, is in **[`script_paper.md`](https://github.com/MenakaGodakanda/bbe_sim/blob/main/scripts_paper.md)**.
+> 
 ---
 
-## 1. What is real and what is synthetic
+## 1. What this repository does
+ 
+Anti-money-laundering (AML) screening follows tainted value (money that can be traced back to an illicit source) from account to account, and flags accounts that look too exposed. Because anyone can send money to any address, an attacker can send small amounts of tainted value to innocent users ("dusting") and make them look exposed. Cross-chain bridges make this harder to defend against, because the link between a deposit on one chain and a withdrawal on another has to be inferred.
+ 
+**BBE** (Budget-Bounded Exposure) is a flagging policy. An account is flagged only if **all three** conditions hold:
+ 
+```
+T > 0     and     T >= delta     and     T >= theta * B
+```
+ 
+where `T` is the tainted part of the account's balance, `B` is the balance, `delta` is an absolute floor (in US dollars) and `theta` is a share threshold (for example 10%). Taint is moved by a rule that conserves value (FIFO or haircut), so no transfer creates new taint.
+ 
+**Theorem 1.** An attacker whose total outlay, including transfer fees, is `B_attack` can flag at most `B_attack / (delta + c)` accounts, whatever the victims' balances. Here `c` is the fee per transfer.
+ 
+The code evaluates the policy on **250,527 real Wormhole bridge transfers** and reproduces every number, table and figure in the paper's Results section.
+ 
+---
+## 2. What is real and what is synthetic
 
 | Item | Source | Used for |
 |---|---|---|
@@ -18,7 +37,7 @@ BBE is a taint-flagging policy for cross-chain anti-money-laundering (AML) scree
 
 ---
 
-## 2. Requirements
+## 3. Requirements
 
 - Ubuntu 22.04 or later (tested on Ubuntu; other Linux distributions should work)
 - Python 3.10 or later, `pip`, `venv`, `wget`, `curl`, `md5sum`
@@ -30,7 +49,7 @@ Python packages (pinned minimums in `requirements.txt`): numpy, pandas, pyarrow,
 
 ---
 
-## 3. Repository layout
+## 4. Repository layout
 
 ```
 bbe_sim/
@@ -53,7 +72,7 @@ bbe_sim/
 
 ---
 
-## 4. Quick start (all commands)
+## 5. Quick start (all commands)
 
 ```bash
 git clone https://github.com/MenakaGodakanda/bbe_sim.git
@@ -73,7 +92,7 @@ bash scripts/07_collect_outputs.sh
 The fixed random seed (`seed: 20261030` in `config.yaml`) and the integer arithmetic make a re-run produce identical CSV files.
 
 ---
-## 5. Step-by-step guide
+## 6. Step-by-step guide
 
 Each step lists what it does, the command, and what you should see.
 
@@ -635,7 +654,7 @@ bash scripts/07_collect_outputs.sh
 
 ---
 
-## 6. Output files
+## 7. Output files
 
 | File | Content |
 |---|---|
@@ -696,7 +715,7 @@ Send me bbe_outputs.tar.gz (or paste the CSV/TXT/JSON contents).
 ```
 ---
 
-## 7. Method summary and how the code maps to the paper
+## 8. Method summary and how the code maps to the paper
 
 | Paper component | Code |
 |---|---|
@@ -709,7 +728,7 @@ Send me bbe_outputs.tar.gz (or paste the CSV/TXT/JSON contents).
 
 ---
 
-## 8. Limitations (the same as in the paper)
+## 9. Limitations (the same as in the paper)
 
 - The results use one bridge (Wormhole). The other Zenodo bridges are not used because their completion times or USD amounts are missing or incomplete.
 - Opening balances are not observed. A victim's balance is the sum of bridge-observed receipts, so leverage for the non-BBE policies is an upper bound.
@@ -720,7 +739,7 @@ Send me bbe_outputs.tar.gz (or paste the CSV/TXT/JSON contents).
 
 ---
 
-## 9. Troubleshooting
+## 10. Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -732,9 +751,7 @@ Send me bbe_outputs.tar.gz (or paste the CSV/TXT/JSON contents).
 
 ---
 
-## 10. Data licences, citation and contact
+## 11. Data licences, citation and contact
 
-- Cross-chain data: Zenodo record 15354599. Follow the licence and citation request on that record. [Add the dataset citation and DOI here.]
+- Cross-chain data: Zenodo record 15354599 (Creative Commons Attribution). Cite the dataset paper: Yan et al., "An Empirical Study on Cross-chain Transactions: Costs, Inconsistencies, and Activities", ASIA CCS '25. [https://doi.org/10.1145/3708821.3733878]
 - OFAC list: US Treasury Office of Foreign Assets Control, via https://github.com/0xB10C/ofac-sanctioned-digital-currency-addresses
-- Code licence: [add a licence, for example MIT, and a `LICENSE` file]
-
